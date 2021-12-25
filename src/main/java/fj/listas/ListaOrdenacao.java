@@ -2,6 +2,7 @@ package fj.listas;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListaOrdenacao {
@@ -34,7 +35,31 @@ public class ListaOrdenacao {
         Collections.sort(gatos);
         System.out.println(gatos);
 
+        // ordenar usando a interface comparator
+        // para nao precisar altear o compaato a toda hora
+        System.out.println("\n--------------------------------");
+        System.out.println("\tOrdem idade\t");
+        // pode utilizar qualuer um dos metodos abaixo
+        // Collections.sort(gatos, new ComparatorIdade());
+        gatos.sort(new ComparatorIdade());
+        System.out.println(gatos);
 
+        System.out.println("\n--------------------------------");
+        System.out.println("\tOrdem cor\t");
+        // pode utilizar qualuer um dos metodos abaixo
+        // Collections.sort(gatos, new ComparatorIdade());
+        gatos.sort(new ComparatorIdade());
+        System.out.println(gatos);
 
     } // fim PSVM
+
+static class ComparatorIdade implements Comparator<Gato> {
+
+    @Override
+    public int compare(Gato g1, Gato g2) {
+        return Integer.compare( g1.getIdade(), g2.getIdade());
+    }
+}
+
+
 } // fim classe Ordenacao

@@ -36,7 +36,7 @@ public class ListaOrdenacao {
         System.out.println(gatos);
 
         // ordenar usando a interface comparator
-        // para nao precisar altear o compaato a toda hora
+        // para nao precisar altear o comparable a toda hora
         System.out.println("\n--------------------------------");
         System.out.println("\tOrdem idade\t");
         // pode utilizar qualuer um dos metodos abaixo
@@ -46,20 +46,25 @@ public class ListaOrdenacao {
 
         System.out.println("\n--------------------------------");
         System.out.println("\tOrdem cor\t");
-        // pode utilizar qualuer um dos metodos abaixo
-        // Collections.sort(gatos, new ComparatorIdade());
-        gatos.sort(new ComparatorIdade());
+        gatos.sort(new ComparatorCor());
         System.out.println(gatos);
 
     } // fim PSVM
 
-static class ComparatorIdade implements Comparator<Gato> {
+    private static class ComparatorIdade implements Comparator<Gato> {
 
-    @Override
-    public int compare(Gato g1, Gato g2) {
-        return Integer.compare( g1.getIdade(), g2.getIdade());
+        @Override
+        public int compare(Gato g1, Gato g2) {
+            return Integer.compare( g1.getIdade(), g2.getIdade());
+        }
     }
-}
 
 
+    private static class ComparatorCor implements Comparator<Gato> {
+        @Override
+        public int compare(Gato g1, Gato g2) {
+            // como cor é String
+            return g1.getCor().compareToIgnoreCase(g2.getCor());
+        }
+    }
 } // fim classe Ordenacao

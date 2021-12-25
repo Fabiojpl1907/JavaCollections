@@ -39,14 +39,23 @@ public class ListaOrdenacao {
         // para nao precisar altear o comparable a toda hora
         System.out.println("\n--------------------------------");
         System.out.println("\tOrdem idade\t");
-        // pode utilizar qualuer um dos metodos abaixo
+        // pode utilizar qualquer um dos metodos abaixo
         // Collections.sort(gatos, new ComparatorIdade());
         gatos.sort(new ComparatorIdade());
         System.out.println(gatos);
 
         System.out.println("\n--------------------------------");
         System.out.println("\tOrdem cor\t");
+        // pode utilizar qualquer um dos metodos abaixo
+        // Collections.sort(gatos, new ComparatorCor());
         gatos.sort(new ComparatorCor());
+        System.out.println(gatos);
+
+        System.out.println("\n--------------------------------");
+        System.out.println("\tOrdenar por Nome->Cor->Idade\t");
+        // pode utilizar qualquer um dos metodos abaixo
+        Collections.sort(gatos, new ComparatorNomeCorIdade());
+        // gatos.sort(new ComparatorNomeCorIdade());
         System.out.println(gatos);
 
     } // fim PSVM
@@ -67,4 +76,28 @@ public class ListaOrdenacao {
             return g1.getCor().compareToIgnoreCase(g2.getCor());
         }
     }
+
+
+    private static class ComparatorNomeCorIdade implements Comparator<Gato> {
+        @Override
+        public int compare(Gato g1, Gato g2) {
+            // comparar nome
+            // 0 é igual , 1 é maior , -1 é menor
+            int nome = g1.getNome().compareToIgnoreCase(g2.getNome());
+
+            // se nome diferente. ordenar por nome
+            if(nome != 0 ) return nome;
+
+            // comparar cor
+            int cor = g1.getCor().compareToIgnoreCase(g2.getCor());
+            // se nome diferente. ordenar por nome
+            if(cor != 0 ) return cor;
+
+            // se nome e cor forem iguais
+            // ordenar por idade
+            return Integer.compare(g1.getIdade(), g2.getIdade());
+        }
+    }
+
+
 } // fim classe Ordenacao

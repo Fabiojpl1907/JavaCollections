@@ -1,4 +1,4 @@
-package fj.listas;
+package fj.listasList;
 
 public class Gato implements Comparable<Gato>{
 

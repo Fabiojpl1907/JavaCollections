@@ -2,7 +2,13 @@
 
 
 
+O projeto tem como objetivo registrar e divulgar aprendizados sobre Java Collection , a partir do curso de mesmo nome da Dio . 
 
+Cada código traz comentários para um maior entendimento do tema e sua implantação . 
+
+O projeto esta estruturado em pacotes organizados segundo a collection em estudo : Lista, Conjuntos , Mapa e Fluxo  
+
+Abaixo ume resumo conceitual de cada tema e sua impantação em Java . 
 
 1. **Listas** 
 

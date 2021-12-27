@@ -57,10 +57,6 @@ public class Ordenar {
             System.out.println(serie.getNome() + " - " + serie.getGenero() + " - "
                     + serie.getTempoEpisodio());
 
-
-
-
-
     }// fim main
 
     private static class ComparatoNGT implements Comparator<Serie>{

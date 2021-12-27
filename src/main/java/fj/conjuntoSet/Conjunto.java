@@ -88,7 +88,7 @@ public class Conjunto {
 
         System.out.println("\n_________________________________");
         System.out.println("Exibir  notas na ordem crescente" );
-        // aqui ecessitamos da implementação TreeSet
+        // aqui necessitamos da implementação TreeSet
         // que organiza na ordem natural dos elementos ( menor -> Maior r , alfabetico )
         // ai inves de popularmos a nova lista
         // vamos usar como parametos uma alista anteriormente criada . Notas2

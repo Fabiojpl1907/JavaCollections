@@ -99,7 +99,9 @@ Não há uma receita pronta aplicavel sempre, escolher estruturas de dados é um
 
 
 
-Set -> **HashSet** / **LinkedHashSet / TreeSet**
+**Set ->** **HashSet** / **LinkedHashSet / TreeSet**
+
+**Map ->** **HashMap** / **LinkedHashMap / TreeMap**
 
 - **HashSet** :  é implementado como uma tabela hash, uma matriz na qual os elementos são armazenados em uma posição derivada de seu conteúdo. Uma vez que as tabelas hash armazenam e recuperam elementos baseado em seu conteúdo, elas são bastante apropriadas para implementar as operações de Set . O HashSet é o mais rápido de todos, não importa o quanto é  adicionado, removido, retirado, o tempo de execução sempre será o mesmo. E isso é extremamente crítico em processos onde temos uma situação crítica com milhões de dados a serem inseridos em um Set. Porem a  ordem dos elementos inseridos não é mantida, ou seja, esse tipo de estrutura é indicada se você precisa garantir a alta performance sem se importar com a ordem com que os elementos estão ordenados.
 - **LinkedHashSet** :  O LinkedHashSet faz uso também do HashTable com linked list, assim :  Os elementos continuam na ordem que são inseridos. 
@@ -131,10 +133,4 @@ https://www.computersciencemaster.com.br/entenda-o-que-e-um-tipo-abstrato-de-dad
 
 https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077
 
-
-
 https://dzone.com/articles/equals-and-hashcode-dummies
-
-
-
-Entry ??

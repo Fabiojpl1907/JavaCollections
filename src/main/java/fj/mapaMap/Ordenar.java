@@ -1,4 +1,4 @@
-package fj.mapa;
+package fj.mapaMap;
 
 import java.util.*;
 

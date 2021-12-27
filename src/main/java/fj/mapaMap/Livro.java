@@ -1,4 +1,4 @@
-package fj.mapa;
+package fj.mapaMap;
 
 import java.util.Objects;
 
@@ -24,7 +24,7 @@ public class Livro {
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
-            fj.mapa.Livro livro = (fj.mapa.Livro) o;
+            fj.mapaMap.Livro livro = (fj.mapaMap.Livro) o;
             return nome.equals(livro.nome) && paginas.equals(livro.paginas);
         }
 

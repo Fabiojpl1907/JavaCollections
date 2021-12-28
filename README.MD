@@ -6,7 +6,7 @@ O projeto tem como objetivo registrar e divulgar aprendizados sobre Java Collect
 
 Cada código traz comentários para um maior entendimento do tema e sua implantação . 
 
-O projeto esta estruturado em pacotes organizados segundo a collection em estudo : Lista, Conjuntos , Mapa e Fluxo  
+O projeto esta estruturado em pacotes organizados segundo a collection em estudo : Lista, Conjuntos e Mapa.
 
 Abaixo um resumo conceitual de cada tema e sua implantação em Java . 
 
@@ -134,3 +134,7 @@ https://www.computersciencemaster.com.br/entenda-o-que-e-um-tipo-abstrato-de-dad
 https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077
 
 https://dzone.com/articles/equals-and-hashcode-dummies
+
+https://www.technofundo.com/tech/java/equalhash.html
+
+https://blog.algaworks.com/entendendo-o-equals-e-hashcode/
